@@ -1,0 +1,48 @@
+{
+  "clarified_on": "2026-10-20",
+  "basis": "Direct author clarification in the project review conversation.",
+  "author_statement": {
+    "model_selection_split": "validation",
+    "test_used_for_model_selection": false,
+    "test_scores_viewed_after_model_selection": true,
+    "test_evaluation_purpose": "Compare the selected model's performance with previous models."
+  },
+  "interpretation": "Score visibility is distinct from score-based model selection. Retired *_seen flags are not interpreted as test_used_for_model_selection. The previous never-viewed statement in the documentation is superseded.",
+  "metadata_changes": [
+    {
+      "file": "results/comparisons/feature_mlp_validation_selection.json",
+      "before_sha256": "badaf6d244020c03930101743d8a70e120bb081bf2204af6f1a644c0d79f6757",
+      "retired_field": "prior_test_score_seen_before_this_round",
+      "retired_value": true,
+      "replacement": {
+        "model_selection_split": "validation",
+        "test_used_for_model_selection": false
+      }
+    },
+    {
+      "file": "results/comparisons/selected_validation_selection.json",
+      "before_sha256": "8c13938bd6889017ad1bf07fea515668908b79e25ca72fa39f1324719de88132",
+      "retired_field": "prior_test_scores_seen",
+      "retired_value": true,
+      "replacement": {
+        "model_selection_split": "validation",
+        "test_used_for_model_selection": false
+      }
+    },
+    {
+      "file": "results/search_costs.json",
+      "before_sha256": "a52f9b2fd76f85e085b5a14a7a18e31caca071120444b815f1d6e06dbb7df3b5",
+      "retired_field": "early_test_scores_seen",
+      "retired_value": true,
+      "replacement": {
+        "model_selection_split": "validation",
+        "test_used_for_model_selection": false
+      }
+    }
+  ],
+  "unchanged_original_archive": {
+    "path": "results/history/original_records.zip",
+    "sha256": "c8a8903af64d6f146c3e9b6514e99d23add0bb7253eec6975606635e9364a1bc"
+  },
+  "scope": "Selection metadata and explanatory documentation only. No model, weight, score or prediction changes."
+}

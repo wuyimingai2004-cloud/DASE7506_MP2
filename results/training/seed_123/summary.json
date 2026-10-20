@@ -1,0 +1,8 @@
+{
+  "seed": 123,
+  "best_epoch": 12,
+  "epochs": 24,
+  "validation_correct": 749,
+  "parameters": 305144,
+  "seconds": 9.920542292005848
+}

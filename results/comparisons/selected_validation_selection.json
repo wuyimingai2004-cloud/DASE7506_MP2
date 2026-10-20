@@ -1,0 +1,235 @@
+{
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "frozen_at_utc": "2026-10-20T09:20:15.870280+00:00",
+  "plan": {
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "k": 8,
+    "width": 128,
+    "blocks": 2,
+    "epochs": 80,
+    "patience": 12,
+    "dropout": 0.15,
+    "batch_size": 128,
+    "lr": 0.002,
+    "weight_decay": 0.0003,
+    "head_loss": "BCE + multi-positive ranking",
+    "train_early_stop_aggregation": "mean_sigmoid",
+    "strategies_per_family": [
+      [
+        "mean_logits",
+        "best"
+      ],
+      [
+        "mean_sigmoid",
+        "best"
+      ],
+      [
+        "mean_softmax",
+        "best"
+      ],
+      [
+        "mean_sigmoid",
+        "answer_sum"
+      ],
+      [
+        "mean_softmax",
+        "answer_sum"
+      ],
+      [
+        "mean_logits",
+        "mob_poly"
+      ],
+      [
+        "mean_logits",
+        "mob_adaptive"
+      ]
+    ],
+    "families": [
+      "v2_context_mlp",
+      "tabm"
+    ],
+    "selection": "validation correct count, then fewer inference asset bytes",
+    "test_not_used_in_this_experiment": true
+  },
+  "runs": [
+    {
+      "seed": 42,
+      "best_epoch": 3,
+      "epochs": 15,
+      "validation_correct": 743,
+      "parameters": 305144,
+      "seconds": 6.7908488340326585
+    },
+    {
+      "seed": 123,
+      "best_epoch": 12,
+      "epochs": 24,
+      "validation_correct": 749,
+      "parameters": 305144,
+      "seconds": 9.920542292005848
+    },
+    {
+      "seed": 2026,
+      "best_epoch": 8,
+      "epochs": 20,
+      "validation_correct": 747,
+      "parameters": 305144,
+      "seconds": 8.245787417050451
+    }
+  ],
+  "candidates": [
+    {
+      "family": "v2_context_mlp",
+      "aggregation": "mean_logits",
+      "selection": "best",
+      "correct": 746,
+      "accuracy": 93.48370927318295,
+      "member_asset_bytes": 3301923
+    },
+    {
+      "family": "v2_context_mlp",
+      "aggregation": "mean_sigmoid",
+      "selection": "best",
+      "correct": 744,
+      "accuracy": 93.23308270676692,
+      "member_asset_bytes": 3301923
+    },
+    {
+      "family": "v2_context_mlp",
+      "aggregation": "mean_softmax",
+      "selection": "best",
+      "correct": 747,
+      "accuracy": 93.60902255639098,
+      "member_asset_bytes": 3301923
+    },
+    {
+      "family": "v2_context_mlp",
+      "aggregation": "mean_sigmoid",
+      "selection": "answer_sum",
+      "correct": 737,
+      "accuracy": 92.35588972431077,
+      "member_asset_bytes": 3301923
+    },
+    {
+      "family": "v2_context_mlp",
+      "aggregation": "mean_softmax",
+      "selection": "answer_sum",
+      "correct": 746,
+      "accuracy": 93.48370927318295,
+      "member_asset_bytes": 3301923
+    },
+    {
+      "family": "v2_context_mlp",
+      "aggregation": "mean_logits",
+      "selection": "mob_poly",
+      "correct": 720,
+      "accuracy": 90.22556390977444,
+      "member_asset_bytes": 3301923
+    },
+    {
+      "family": "v2_context_mlp",
+      "aggregation": "mean_logits",
+      "selection": "mob_adaptive",
+      "correct": 744,
+      "accuracy": 93.23308270676692,
+      "member_asset_bytes": 3301923
+    },
+    {
+      "family": "tabm",
+      "aggregation": "mean_logits",
+      "selection": "best",
+      "correct": 748,
+      "accuracy": 93.734335839599,
+      "member_asset_bytes": 3723330
+    },
+    {
+      "family": "tabm",
+      "aggregation": "mean_sigmoid",
+      "selection": "best",
+      "correct": 745,
+      "accuracy": 93.35839598997494,
+      "member_asset_bytes": 3723330
+    },
+    {
+      "family": "tabm",
+      "aggregation": "mean_softmax",
+      "selection": "best",
+      "correct": 748,
+      "accuracy": 93.734335839599,
+      "member_asset_bytes": 3723330
+    },
+    {
+      "family": "tabm",
+      "aggregation": "mean_sigmoid",
+      "selection": "answer_sum",
+      "correct": 733,
+      "accuracy": 91.8546365914787,
+      "member_asset_bytes": 3723330
+    },
+    {
+      "family": "tabm",
+      "aggregation": "mean_softmax",
+      "selection": "answer_sum",
+      "correct": 743,
+      "accuracy": 93.10776942355889,
+      "member_asset_bytes": 3723330
+    },
+    {
+      "family": "tabm",
+      "aggregation": "mean_logits",
+      "selection": "mob_poly",
+      "correct": 720,
+      "accuracy": 90.22556390977444,
+      "member_asset_bytes": 3723330
+    },
+    {
+      "family": "tabm",
+      "aggregation": "mean_logits",
+      "selection": "mob_adaptive",
+      "correct": 749,
+      "accuracy": 93.85964912280701,
+      "member_asset_bytes": 3723330
+    }
+  ],
+  "selected": {
+    "family": "tabm",
+    "aggregation": "mean_logits",
+    "selection": "mob_adaptive",
+    "correct": 749,
+    "accuracy": 93.85964912280701,
+    "member_asset_bytes": 3723330
+  },
+  "asset_bytes": 3723503,
+  "total_seconds": 26.858537916035857,
+  "numpy": "2.5.3",
+  "torch": "2.8.0",
+  "tabm": "0.0.3",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "device": "cpu",
+  "threads": 4,
+  "test_loaded": false,
+  "source_sha256": {
+    "train_research.py": "b2267fd5d9966632a1d0c948414f482dde85d6de465ddb27581a266f153ca360",
+    "submission_research.py": "9feb8af09959dbbb041c1c30a94ea51b1eea1683955596b863a56944ca597e85",
+    "answer_aggregation.py": "82196eae16b2a951a4bf0cc941b536793ff5c1d357576eb4ab1692d5cd26f1fd",
+    "advanced_features.py": "6a0eb865c988065f850fc1b970b4aee0d3dc3f5c03b355f684d6624ec2445077",
+    "third_party/mob_algorithms.py": "2081b7e5e542c8b518320d23bc231a8076acc11c28e038d2f793b57feb063251"
+  },
+  "asset_sha256": {
+    "ensemble.json": "1031f60e6c51908e187146fa07a581632b971b2fdb060591f72a8ec7543597c2",
+    "member_0/config.json": "9a209c021463e8dfacfc2d82a179e70c233ac8a06c736c6523ff826ac97cde74",
+    "member_0/weights.npz": "40bc5949a82f395f2c764e4e8902cf2bbd087c74a81678006b70913c7d8c3b6f",
+    "member_1/config.json": "9a209c021463e8dfacfc2d82a179e70c233ac8a06c736c6523ff826ac97cde74",
+    "member_1/weights.npz": "39ae12052cea92e970aadbcd53dec5b5e23a01470c703bb027eea737d8815d88",
+    "member_2/config.json": "9a209c021463e8dfacfc2d82a179e70c233ac8a06c736c6523ff826ac97cde74",
+    "member_2/weights.npz": "b6b5de22156e03ec832979cb2ccd168b5b04ca55984434bbd2bfb7502e9ba62f"
+  },
+  "model_selection_split": "validation",
+  "test_used_for_model_selection": false,
+  "test_evaluation_purpose": "Post-selection performance comparison with previous models.",
+  "provenance_clarification": "results/evaluation_provenance.json"
+}

@@ -1,0 +1,74 @@
+{
+  "stages": [
+    {
+      "stage": "mlp",
+      "training_runs": 1,
+      "recorded_program_seconds": 3.1246864160057157,
+      "source_record_sha256": "389b93dfe70897e41493ed20b282efb485688f33f3046141ff57e475cc09d569"
+    },
+    {
+      "stage": "mlp_bce",
+      "training_runs": 1,
+      "recorded_program_seconds": 2.191002792038489,
+      "source_record_sha256": "ffa9a9ceb5f5492ff25bb16cf2d6cecb8db2c8e8ce427435d9cae4daa4624b37"
+    },
+    {
+      "stage": "mlp_v2",
+      "training_runs": 6,
+      "recorded_program_seconds": 8.866306874959264,
+      "source_record_sha256": "badaf6d244020c03930101743d8a70e120bb081bf2204af6f1a644c0d79f6757"
+    },
+    {
+      "stage": "research",
+      "training_runs": 3,
+      "recorded_program_seconds": 26.858537916035857,
+      "source_record_sha256": "8c13938bd6889017ad1bf07fea515668908b79e25ca72fa39f1324719de88132"
+    },
+    {
+      "stage": "exploration",
+      "training_runs": 18,
+      "recorded_program_seconds": 226.30753654200817,
+      "source_record_sha256": "7f0d55659ea046cd2582d99c00048d57106d8f8adf8b04153ef58a3bb5eb972a"
+    },
+    {
+      "stage": "joint",
+      "training_runs": 15,
+      "recorded_program_seconds": 116.92267737496877,
+      "source_record_sha256": "944b76a11fb07dc7dafc51135501b23084e6d342187ea2091ee0985c8d87fb4d"
+    },
+    {
+      "stage": "objectives",
+      "training_runs": 9,
+      "recorded_program_seconds": 80.83037316700211,
+      "source_record_sha256": "e62c9610b7dc8f17f5386f7948d938efca93951d71cdd700381df0622c3d3941"
+    },
+    {
+      "stage": "blends",
+      "training_runs": 6,
+      "recorded_program_seconds": 13.187811458017677,
+      "source_record_sha256": "893bbebcd7301f50c6c5726f702f65d017d2505eaab9f2f7baee6e0bad941afa"
+    },
+    {
+      "stage": "numeric",
+      "training_runs": 3,
+      "recorded_program_seconds": 38.314507791015785,
+      "source_record_sha256": "ce11839124405b10608116c9c4958e716a95d95c47eff51118ff507aff63c164"
+    },
+    {
+      "stage": "numeric_blend",
+      "training_runs": 0,
+      "recorded_program_seconds": 3.4278744580224156,
+      "source_record_sha256": "40cce547d736c0a08aa126ceabc015a0aeb8f8cf5d7f8b644ea2ceffba74e377"
+    }
+  ],
+  "neural_training_runs": 62,
+  "recorded_program_seconds": 520.0313147900742,
+  "scope": "Recorded neural model experiments; excludes coding, setup, tests and exploratory diagnostics.",
+  "continued_exploration_training_runs": 33,
+  "continued_exploration_seconds": 252.68324424902676,
+  "continued_exploration_outcome": "No replacement passed the train-only gates.",
+  "model_selection_split": "validation",
+  "test_used_for_model_selection": false,
+  "test_evaluation_purpose": "Post-selection performance comparison with previous models.",
+  "provenance_clarification": "results/evaluation_provenance.json"
+}

@@ -1,0 +1,75 @@
+{
+  "split": "validation",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "processor": "arm",
+  "cpu_count": 10,
+  "python": "3.12.13",
+  "threads": 4,
+  "prediction_process_wall_seconds": 0.40374079102184623,
+  "scoring_process_wall_seconds": 0.05979183397721499,
+  "total_wall_seconds": 0.4636683330172673,
+  "asset_bytes": 3723503,
+  "asset_mib": 3.551009178161621,
+  "assets": {
+    "ensemble.json": {
+      "bytes": 173,
+      "sha256": "1031f60e6c51908e187146fa07a581632b971b2fdb060591f72a8ec7543597c2"
+    },
+    "member_0/config.json": {
+      "bytes": 958,
+      "sha256": "9a209c021463e8dfacfc2d82a179e70c233ac8a06c736c6523ff826ac97cde74"
+    },
+    "member_0/weights.npz": {
+      "bytes": 1240152,
+      "sha256": "40bc5949a82f395f2c764e4e8902cf2bbd087c74a81678006b70913c7d8c3b6f"
+    },
+    "member_1/config.json": {
+      "bytes": 958,
+      "sha256": "9a209c021463e8dfacfc2d82a179e70c233ac8a06c736c6523ff826ac97cde74"
+    },
+    "member_1/weights.npz": {
+      "bytes": 1240152,
+      "sha256": "39ae12052cea92e970aadbcd53dec5b5e23a01470c703bb027eea737d8815d88"
+    },
+    "member_2/config.json": {
+      "bytes": 958,
+      "sha256": "9a209c021463e8dfacfc2d82a179e70c233ac8a06c736c6523ff826ac97cde74"
+    },
+    "member_2/weights.npz": {
+      "bytes": 1240152,
+      "sha256": "b6b5de22156e03ec832979cb2ccd168b5b04ca55984434bbd2bfb7502e9ba62f"
+    }
+  },
+  "commands": [
+    [
+      "/Users/imi/Desktop/HKU/First Semester/DASE7506/MP2/.venv/bin/python",
+      "/Users/imi/Documents/Codex/2026-10-20/mini-project-dear-students-mini-project-7/work/best_only/code/predict.py",
+      "--method",
+      "/Users/imi/Documents/Codex/2026-10-20/mini-project-dear-students-mini-project-7/work/best_only/code/submission.py",
+      "--split",
+      "validation",
+      "--data-dir",
+      "/Users/imi/Desktop/HKU/First Semester/DASE7506/MP2/code/data",
+      "--output",
+      "/Users/imi/Documents/Codex/2026-10-20/mini-project-dear-students-mini-project-7/work/best_only/records/evaluation/validation/validation-predictions.json",
+      "--checkpoint",
+      "/Users/imi/Documents/Codex/2026-10-20/mini-project-dear-students-mini-project-7/work/best_only/code/checkpoint"
+    ],
+    [
+      "/Users/imi/Desktop/HKU/First Semester/DASE7506/MP2/.venv/bin/python",
+      "/Users/imi/Documents/Codex/2026-10-20/mini-project-dear-students-mini-project-7/work/best_only/code/score_predictions.py",
+      "--split",
+      "validation",
+      "--data-dir",
+      "/Users/imi/Desktop/HKU/First Semester/DASE7506/MP2/code/data",
+      "--predictions",
+      "/Users/imi/Documents/Codex/2026-10-20/mini-project-dear-students-mini-project-7/work/best_only/records/evaluation/validation/validation-predictions.json",
+      "--output",
+      "/Users/imi/Documents/Codex/2026-10-20/mini-project-dear-students-mini-project-7/work/best_only/records/evaluation/validation/validation-score.json"
+    ]
+  ],
+  "local_under_30_seconds": true,
+  "reference_cpu_eligibility_verified": false,
+  "accuracy": 93.85964912280701
+}

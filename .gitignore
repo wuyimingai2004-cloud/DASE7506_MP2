@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+runs/
+.DS_Store
+Thumbs.db
+
+# Generated runs; the frozen results and checkpoint stay versioned.
+results/reproduce_*/
+results/retrained*/
+results/ablation_*/

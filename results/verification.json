@@ -1,0 +1,102 @@
+{
+  "targeted_tests_passed": 7,
+  "standalone_training_reproduced": true,
+  "reproduction_training_runs": 3,
+  "validation": {
+    "correct": 749,
+    "n": 798,
+    "accuracy": 93.85964912280701
+  },
+  "checkpoint_byte_parity": {
+    "ensemble.json": true,
+    "member_0/config.json": true,
+    "member_0/weights.npz": true,
+    "member_1/config.json": true,
+    "member_1/weights.npz": true,
+    "member_2/config.json": true,
+    "member_2/weights.npz": true
+  },
+  "reproduction_program_seconds": 27.1677629170008,
+  "note": "Fixed-setting reproduction check after refactoring; no additional search or model selection.",
+  "evaluation": {
+    "validation": {
+      "same_predictions_as_original": true,
+      "accuracy": 93.85964912280701,
+      "complete_evaluation_seconds": 0.4636683330172673
+    },
+    "test": {
+      "same_predictions_as_original": true,
+      "accuracy": 81.79871520342613,
+      "complete_evaluation_seconds": 0.31833500001812354
+    }
+  },
+  "all_seven_aggregation_ablation_counts_match_original": true,
+  "report_pages": 5,
+  "report_visually_checked": true,
+  "retained_text_files_english": true,
+  "layout_refactor": {
+    "unchanged_function_asts": {
+      "code/mp2/model.py": [
+        "tabm_heads",
+        "load_tabm",
+        "predict"
+      ],
+      "code/mp2/features.py": [
+        "numeric_expression",
+        "equation_statistics",
+        "parsed_answers",
+        "metadata_features",
+        "build_features",
+        "mask_unparseable"
+      ],
+      "code/mp2/aggregation.py": [
+        "aggregate_heads",
+        "select_answers"
+      ],
+      "code/mp2/training_utils.py": [
+        "correctness_labels",
+        "load_supervised",
+        "selection_loss"
+      ],
+      "code/mp2/training.py": [
+        "correct_count",
+        "forward_heads",
+        "evaluate_heads",
+        "head_loss",
+        "export_tabm",
+        "train_one",
+        "validation_ablation"
+      ]
+    },
+    "all_checkpoint_hashes_unchanged": true,
+    "test_bank_re_evaluated": false,
+    "training_repeated": false,
+    "targeted_tests_passed": 7,
+    "validation_predictions_unchanged": true,
+    "validation_correct": 749,
+    "validation_questions": 798,
+    "all_seven_aggregation_counts_unchanged": true,
+    "official_benchmark_files_unchanged": true
+  },
+  "report_comparison_restoration": {
+    "record": "results/reproduction/comparison.json",
+    "validation_counts": {
+      "majority": 688,
+      "embedding_mlp": 721,
+      "embedding_mlp_masked": 725,
+      "feature_mlp_metadata": 741,
+      "feature_mlp_context": 746,
+      "tabm_mob": 749
+    },
+    "baseline_training_runs": 7,
+    "all_14_baseline_checkpoint_files_byte_identical": true,
+    "final_model_code_and_assets_unchanged": true,
+    "test_bank_re_evaluated": false,
+    "original_experiment_records_unchanged": true,
+    "targeted_tests_passed": 7,
+    "all_seven_aggregation_counts_match_original": true,
+    "report_pages": 5,
+    "report_visually_checked": true,
+    "historical_json_files_preserved": 267
+  }
+}

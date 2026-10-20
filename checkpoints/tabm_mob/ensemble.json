@@ -1,0 +1,10 @@
+{
+  "format": "mp2-research-ensemble-v1",
+  "members": [
+    "member_0",
+    "member_1",
+    "member_2"
+  ],
+  "aggregation": "mean_logits",
+  "selection": "mob_adaptive"
+}

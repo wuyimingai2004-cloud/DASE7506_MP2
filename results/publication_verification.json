@@ -1,0 +1,28 @@
+{
+  "repository": "https://github.com/wuyimingai2004-cloud/DASE7506_MP2",
+  "verified_commit": "a20dfd9ccd5e2410f9c556e63d05f866a59a183a",
+  "public_clone_without_credentials": true,
+  "fresh_virtual_environment": true,
+  "dependency_installation": "Pinned root requirements installed successfully from https://pypi.org/simple; pip check passed.",
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "torch": "2.8.0",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "unit_tests_passed": 7,
+  "data_check": "passed",
+  "source_documentation_and_checkpoint_hashes_match": true,
+  "official_test_score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "test",
+    "correct": 382,
+    "n": 467,
+    "accuracy": 81.79871520342613,
+    "scoring_seconds": 0.010250249993987381
+  },
+  "complete_evaluation_seconds": 0.32269395800540224,
+  "asset_bytes": 3723503,
+  "asset_mib": 3.551009178161621,
+  "numerical_threads": 4,
+  "reference_cpu_eligibility_verified": false,
+  "course_submission_issue_created": false
+}

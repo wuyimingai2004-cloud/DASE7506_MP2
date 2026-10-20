@@ -1,0 +1,21 @@
+{
+  "frozen_at_utc": "2026-10-20T08:54:03.591335+00:00",
+  "selection_rule": "Compare validation selection accuracy only; freeze before any test scoring.",
+  "selected_checkpoint": "runs/mlp/checkpoint",
+  "validation_candidates": {
+    "mlp": 90.35087719298245,
+    "mlp_bce": 90.22556390977444,
+    "majority": 86.2155388471178
+  },
+  "note": "The ranking-loss MLP beat the BCE-only MLP by one validation question; no robustness claim.",
+  "source_sha256": {
+    "submission.py": "44509ac80380eaf7283cd6937eb4b7fc7e138b4d7b676ff367c6a1bb1696e8c7",
+    "train_mlp.py": "0888032e69299e0f3f8ff0c7767615026196fb4ffed56206b23db1ac196c01a6",
+    "evaluate.py": "3ed2e334e236e75e1e6fdc1a301bf658f826be3e14bde34e1c689c6605d08063"
+  },
+  "asset_sha256": {
+    "config.json": "cc166a58da6d4e2392dc87d25dcb83fb5a31f942a40d70b824a809ae23bb65f9",
+    "weights.npz": "eaf6d08648aa518aed89c2253a65063b8fa01943906e42030f621de71aa330a4"
+  },
+  "test_used_for_selection": false
+}

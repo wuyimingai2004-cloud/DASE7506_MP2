@@ -1,0 +1,98 @@
+{
+  "version": "mp2-tabm-mob-c914bf67099a",
+  "source_manifest_digest": "c914bf67099ad3baa7a71f83ac31da023c200c33725d766953035b7705c9d1c6",
+  "official_base_commit": "bb801f4f2e7629d270df765ab12c333b2dc616bb",
+  "method": "code/submission.py",
+  "checkpoint": "checkpoints/tabm_mob",
+  "selected_by": "Highest recorded validation accuracy: 749/798",
+  "source_sha256": {
+    "code/PACKAGE_MANIFEST.json": "2e9b714598e1addba61545f0d7ce4891d9d11aaf567fb341420d36694fcfd656",
+    "code/README.md": "4c4218d68818d850fbad2fe38d2b1f3d2b80b7646720f21d2356fe3c0e020bc2",
+    "code/check_data.py": "32f203e156e3019f87bb038ade4f303da21ca2f1694bb678a3ddc44661f0b533",
+    "code/common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "code/mp2/__init__.py": "f9e667e165fcfacfd281da8b9d2d2fd7ab5b6461f0d73b9fe846bdbc93cb7a75",
+    "code/mp2/aggregation.py": "bccd42b9cdfc0103a2b8a77ddcbd893ec2c9b9e321e1fcaa39e844c37d94d158",
+    "code/mp2/features.py": "79ca5a6f546f0bcf2c5a35094a04c83829658a50a6f2943cc6ef7efbf7b74130",
+    "code/mp2/model.py": "8a302a695d78f5d00cb8da233e472192ccb10c9140237a1da3272f4a81e5015b",
+    "code/mp2/third_party/MOB_LICENSE.txt": "59db5bab370dc99638435db181d47831e0c373167079b30146b6fc16fccd99b1",
+    "code/mp2/third_party/__init__.py": "4c36821c9b0ceb4ab5506b46921bc6a17274045d3840446e8fab8998f4b82ac4",
+    "code/mp2/third_party/mob_algorithms.py": "2081b7e5e542c8b518320d23bc231a8076acc11c28e038d2f793b57feb063251",
+    "code/mp2/training.py": "8c862f72da7d13aac75b77ea4477f48b2ea7788787d4935cae8af9e64fafe213",
+    "code/mp2/training_utils.py": "8f22c7a677f2aa4e6f1ae2d98cd6e054b1a05c35ceda28d69bb35909443efdad",
+    "code/predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "code/requirements.txt": "5c12d85e7c08038d1dd9ffbf8119d12ce808885230a47e2bf65dcd9f114659d5",
+    "code/score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+    "code/submission.py": "0ba9d43230d856c386bba65e7bee617201fcab316274d98c7c99ec8a449e760b",
+    "experiments/README.md": "d6425e03b1f517d084fd258ecf3e0f4e1c69216df2f7989c7883946ae46db7e2",
+    "experiments/baselines/__init__.py": "cd35d88e84ef99321921250bf3098342f42f3f136940127d199863e8d8330857",
+    "experiments/baselines/comparison.py": "a9e91bfac8eebaa0b0afd7d7fd1e6ba450d379516fc6933045b3bfab2eb5211c",
+    "experiments/baselines/embedding.py": "437d3305abde422d41f5897c4939a75d629c14dd2adde02cb2e39eb6e3317291",
+    "experiments/baselines/feature.py": "dfc9185107222c7ff42264c6ab6af40fb8c4acaf6cc4ba29f7ee999585eb7d14",
+    "experiments/baselines/majority.py": "5210c73fd15097fe1c047ee39c0667a0667a1221ff219dc25719b2f21b1455e5",
+    "experiments/baselines/train_embedding.py": "4de90761d386ebcd71ed4fda9480d3c06a29ac2f4a093ee37a2a83c6f10e5694",
+    "experiments/baselines/train_feature.py": "004fd56dd1ddedeb66c26d2f1538c58c1c0f6a86492e47f1cab58453db75c761",
+    "experiments/reproduce.py": "089e9f44a464e42ede558d340b827e9da17e40f7542db687416cc519bf971cf1",
+    "requirements.txt": "2fd4ab8db63f7e9edefe3fa1806f516855925ab7be2602d2a276109755542172",
+    "scripts/evaluate.py": "4768ad971b40d318ea24cbdf001f23b119d03123cdd8b7f5403c170af18dfbc0",
+    "scripts/train.py": "1afc9faf03bc5998a59f75e771e9762c4cb1c62941b16b3a4a53d72343c8f0ee",
+    "tests/test_model.py": "41530028c27c979f9b0ee1f2f58cd254e074042704daa4a2183806226932fcbb"
+  },
+  "assets": {
+    "ensemble.json": {
+      "bytes": 173,
+      "sha256": "1031f60e6c51908e187146fa07a581632b971b2fdb060591f72a8ec7543597c2"
+    },
+    "member_0/config.json": {
+      "bytes": 958,
+      "sha256": "9a209c021463e8dfacfc2d82a179e70c233ac8a06c736c6523ff826ac97cde74"
+    },
+    "member_0/weights.npz": {
+      "bytes": 1240152,
+      "sha256": "40bc5949a82f395f2c764e4e8902cf2bbd087c74a81678006b70913c7d8c3b6f"
+    },
+    "member_1/config.json": {
+      "bytes": 958,
+      "sha256": "9a209c021463e8dfacfc2d82a179e70c233ac8a06c736c6523ff826ac97cde74"
+    },
+    "member_1/weights.npz": {
+      "bytes": 1240152,
+      "sha256": "39ae12052cea92e970aadbcd53dec5b5e23a01470c703bb027eea737d8815d88"
+    },
+    "member_2/config.json": {
+      "bytes": 958,
+      "sha256": "9a209c021463e8dfacfc2d82a179e70c233ac8a06c736c6523ff826ac97cde74"
+    },
+    "member_2/weights.npz": {
+      "bytes": 1240152,
+      "sha256": "b6b5de22156e03ec832979cb2ccd168b5b04ca55984434bbd2bfb7502e9ba62f"
+    }
+  },
+  "asset_bytes": 3723503,
+  "original_checkpoint_unchanged": true,
+  "packaging_changes": "Independent report-comparison package, preserved original records and concise documentation.",
+  "previous_version": "mp2-tabm-mob-754edc818c08",
+  "evaluation_provenance": {
+    "record": "results/evaluation_provenance.json",
+    "clarified_on": "2026-10-20",
+    "model_selection_split": "validation",
+    "test_used_for_model_selection": false,
+    "test_evaluation_purpose": "Post-selection comparison with previous models."
+  },
+  "documentation_and_metadata_sha256": {
+    "docs/ai_disclosure.md": "57b49064f9af1ec7c439f082a6678a58a9bc4b93faa3c0068c1daeefe4776488",
+    "docs/report.md": "a356d8255bdda2626552567999100f68a61e8414d5538ff81ade4bbbb59536d4",
+    "docs/report.pdf": "045e36f785c15979c641b5ddfb7c039b37ec45bf01ff79c511c3734e164f20ea",
+    "results/comparisons/feature_mlp_validation_selection.json": "100ea7e5c47b6ea397401512aef50d268407370d9ec9385da7fb357e8dfc6fa7",
+    "results/comparisons/selected_validation_selection.json": "52729c72c7ddec9441b16f7d65d9669d453f3ed93bcf37a1c4221a5d4d3c4235",
+    "results/evaluation_provenance.json": "e2c0d2b597fd7604e1fff07671f4e1c81ee4664e17dad19f6775f5712d563ea2",
+    "results/search_costs.json": "7e8c08c159fefcf5bd8b27913b64c4a398eda1291e6f620971d1d0b271759bcf",
+    "README.md": "818a3472308a84f39b6c93247cfd7888af6c908dd2975aecf9d21bf471bd5891",
+    "docs/reproduction.md": "bdd8708fd7da3cba1788bf9bbc0f5c440c3f98224ea073fb4d6c6a5e149c07f4",
+    "docs/submission.md": "1ed9887efde80c48771e7db09ee20cc2d73fb6169c46058e21b8b3733d7221a8",
+    "results/publication_verification.json": "c0376dc442f7ff3e51aff291792edc0c4459a2b994238a027b66865463c040a6"
+  },
+  "original_records_archive_sha256": "c8a8903af64d6f146c3e9b6514e99d23add0bb7253eec6975606635e9364a1bc",
+  "public_repository": "https://github.com/wuyimingai2004-cloud/DASE7506_MP2",
+  "git_tag": "v1.0.0",
+  "publication_verification": "results/publication_verification.json"
+}

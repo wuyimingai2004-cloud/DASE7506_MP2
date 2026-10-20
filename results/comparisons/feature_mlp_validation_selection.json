@@ -1,0 +1,221 @@
+{
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "frozen_at_utc": "2026-10-20T09:05:00.782879+00:00",
+  "plan": {
+    "data_dir": "/Users/imi/Desktop/HKU/First Semester/DASE7506/MP2/code/data",
+    "output": "runs/mlp_v2",
+    "modes": [
+      "metadata",
+      "context"
+    ],
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "hidden": [
+      128,
+      32
+    ],
+    "dropout": 0.15,
+    "batch_size": 128,
+    "epochs": 80,
+    "patience": 12,
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "ranking_weight": 1,
+    "selection_rule": "Highest validation correct count among each feature-mode fixed-seed mean-logit ensemble and the all-member mean-logit ensemble. Ties prefer fewer asset bytes. Compare with masked old baseline before recommending replacement. Single-seed scores are diagnostics only."
+  },
+  "runs": [
+    {
+      "name": "metadata_seed42",
+      "mode": "metadata",
+      "seed": 42,
+      "best_epoch": 10,
+      "epochs_completed": 22,
+      "validation_correct": 744,
+      "validation_questions": 798,
+      "total_training_seconds": 1.3271196249988861,
+      "parameters": 139201,
+      "layer_dims": [
+        1054,
+        128,
+        32,
+        1
+      ],
+      "asset_bytes": 568162
+    },
+    {
+      "name": "metadata_seed123",
+      "mode": "metadata",
+      "seed": 123,
+      "best_epoch": 9,
+      "epochs_completed": 21,
+      "validation_correct": 747,
+      "validation_questions": 798,
+      "total_training_seconds": 0.8035837499774061,
+      "parameters": 139201,
+      "layer_dims": [
+        1054,
+        128,
+        32,
+        1
+      ],
+      "asset_bytes": 568162
+    },
+    {
+      "name": "metadata_seed2026",
+      "mode": "metadata",
+      "seed": 2026,
+      "best_epoch": 6,
+      "epochs_completed": 18,
+      "validation_correct": 741,
+      "validation_questions": 798,
+      "total_training_seconds": 0.70835662499303,
+      "parameters": 139201,
+      "layer_dims": [
+        1054,
+        128,
+        32,
+        1
+      ],
+      "asset_bytes": 568162
+    },
+    {
+      "name": "context_seed42",
+      "mode": "context",
+      "seed": 42,
+      "best_epoch": 12,
+      "epochs_completed": 24,
+      "validation_correct": 740,
+      "validation_questions": 798,
+      "total_training_seconds": 1.3183548329980113,
+      "parameters": 270273,
+      "layer_dims": [
+        2078,
+        128,
+        32,
+        1
+      ],
+      "asset_bytes": 1100641
+    },
+    {
+      "name": "context_seed123",
+      "mode": "context",
+      "seed": 123,
+      "best_epoch": 6,
+      "epochs_completed": 18,
+      "validation_correct": 743,
+      "validation_questions": 798,
+      "total_training_seconds": 0.9451929579954594,
+      "parameters": 270273,
+      "layer_dims": [
+        2078,
+        128,
+        32,
+        1
+      ],
+      "asset_bytes": 1100641
+    },
+    {
+      "name": "context_seed2026",
+      "mode": "context",
+      "seed": 2026,
+      "best_epoch": 12,
+      "epochs_completed": 24,
+      "validation_correct": 746,
+      "validation_questions": 798,
+      "total_training_seconds": 1.2425782920327038,
+      "parameters": 270273,
+      "layer_dims": [
+        2078,
+        128,
+        32,
+        1
+      ],
+      "asset_bytes": 1100641
+    }
+  ],
+  "ensemble_candidates": [
+    {
+      "name": "metadata_ensemble",
+      "members": [
+        "metadata_seed42",
+        "metadata_seed123",
+        "metadata_seed2026"
+      ],
+      "validation_correct": 741,
+      "asset_bytes": 1704486,
+      "accuracy": 92.85714285714286
+    },
+    {
+      "name": "context_ensemble",
+      "members": [
+        "context_seed42",
+        "context_seed123",
+        "context_seed2026"
+      ],
+      "validation_correct": 746,
+      "asset_bytes": 3301923,
+      "accuracy": 93.48370927318295
+    },
+    {
+      "name": "all_ensemble",
+      "members": [
+        "metadata_seed42",
+        "metadata_seed123",
+        "metadata_seed2026",
+        "context_seed42",
+        "context_seed123",
+        "context_seed2026"
+      ],
+      "validation_correct": 743,
+      "asset_bytes": 5006409,
+      "accuracy": 93.10776942355889
+    }
+  ],
+  "old_mlp_with_validity_mask_correct": 725,
+  "selected": {
+    "name": "context_ensemble",
+    "members": [
+      "context_seed42",
+      "context_seed123",
+      "context_seed2026"
+    ],
+    "validation_correct": 746,
+    "asset_bytes": 3301923,
+    "accuracy": 93.48370927318295
+  },
+  "improves_old_masked_baseline": true,
+  "validation_questions": 798,
+  "asset_bytes": 3302064,
+  "total_experiment_seconds": 8.866306874959264,
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "python": "3.12.13",
+  "numpy": "2.5.3",
+  "torch": "2.8.0",
+  "device": "cpu",
+  "threads": 4,
+  "source_sha256": {
+    "advanced_features.py": "6a0eb865c988065f850fc1b970b4aee0d3dc3f5c03b355f684d6624ec2445077",
+    "submission_advanced.py": "f7e2771611ca491b7966583a9d43b21009aa4857a18a4aeaa9c7c1a38b4b94a7",
+    "train_advanced.py": "835e33178b0df19834a615ae1351d76de5f26f34739f3f3a21c482a6abd3391c",
+    "train_mlp.py": "0888032e69299e0f3f8ff0c7767615026196fb4ffed56206b23db1ac196c01a6",
+    "submission.py": "44509ac80380eaf7283cd6937eb4b7fc7e138b4d7b676ff367c6a1bb1696e8c7",
+    "common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c"
+  },
+  "asset_sha256": {
+    "ensemble.json": "9be8452f8414d6c9ba3e646cc763a9a35942d1c94ed95c78f74cf8275d1a19ce",
+    "member_0/config.json": "a0e31459db81395e44f3b8d148b53289db4cd9e5c2a1b512f8fb37f9cc6e6da4",
+    "member_0/weights.npz": "aa99828219629fa8bc938e44678a4400fc5d79ceb425bc18a6273e30451ba5f7",
+    "member_1/config.json": "a0e31459db81395e44f3b8d148b53289db4cd9e5c2a1b512f8fb37f9cc6e6da4",
+    "member_1/weights.npz": "5ac1137096d83162629b207ac7d360ecbb7e7eafe3fdbaa93319a3667f56f39f",
+    "member_2/config.json": "a0e31459db81395e44f3b8d148b53289db4cd9e5c2a1b512f8fb37f9cc6e6da4",
+    "member_2/weights.npz": "62012ac22ffe9978c0e129f3a292cdd0fb955b8935e9c95b56c7f563c2a42d1e"
+  },
+  "test_loaded_by_this_experiment": false,
+  "model_selection_split": "validation",
+  "test_used_for_model_selection": false,
+  "test_evaluation_purpose": "Post-selection performance comparison with previous models.",
+  "provenance_clarification": "results/evaluation_provenance.json"
+}

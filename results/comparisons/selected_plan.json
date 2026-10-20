@@ -1,0 +1,54 @@
+{
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "k": 8,
+  "width": 128,
+  "blocks": 2,
+  "epochs": 80,
+  "patience": 12,
+  "dropout": 0.15,
+  "batch_size": 128,
+  "lr": 0.002,
+  "weight_decay": 0.0003,
+  "head_loss": "BCE + multi-positive ranking",
+  "train_early_stop_aggregation": "mean_sigmoid",
+  "strategies_per_family": [
+    [
+      "mean_logits",
+      "best"
+    ],
+    [
+      "mean_sigmoid",
+      "best"
+    ],
+    [
+      "mean_softmax",
+      "best"
+    ],
+    [
+      "mean_sigmoid",
+      "answer_sum"
+    ],
+    [
+      "mean_softmax",
+      "answer_sum"
+    ],
+    [
+      "mean_logits",
+      "mob_poly"
+    ],
+    [
+      "mean_logits",
+      "mob_adaptive"
+    ]
+  ],
+  "families": [
+    "v2_context_mlp",
+    "tabm"
+  ],
+  "selection": "validation correct count, then fewer inference asset bytes",
+  "test_not_used_in_this_experiment": true
+}

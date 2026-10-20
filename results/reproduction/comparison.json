@@ -1,0 +1,77 @@
+{
+  "purpose": "Fixed-setting reproduction of the report's validation comparisons",
+  "training_runs": 7,
+  "split": "validation",
+  "rows": [
+    {
+      "method": "majority",
+      "correct": 688,
+      "n": 798,
+      "accuracy": 86.2155388471178,
+      "reported_correct": 688,
+      "matches_report": true
+    },
+    {
+      "method": "embedding_mlp",
+      "correct": 721,
+      "n": 798,
+      "accuracy": 90.35087719298245,
+      "reported_correct": 721,
+      "matches_report": true
+    },
+    {
+      "method": "embedding_mlp_masked",
+      "correct": 725,
+      "n": 798,
+      "accuracy": 90.85213032581454,
+      "reported_correct": 725,
+      "matches_report": true
+    },
+    {
+      "method": "feature_mlp_metadata",
+      "correct": 741,
+      "n": 798,
+      "accuracy": 92.85714285714286,
+      "reported_correct": 741,
+      "matches_report": true
+    },
+    {
+      "method": "feature_mlp_context",
+      "correct": 746,
+      "n": 798,
+      "accuracy": 93.48370927318295,
+      "reported_correct": 746,
+      "matches_report": true
+    },
+    {
+      "method": "tabm_mob",
+      "correct": 749,
+      "n": 798,
+      "accuracy": 93.85964912280701,
+      "reported_correct": 749,
+      "matches_report": true
+    }
+  ],
+  "all_counts_match_report": true,
+  "elapsed_seconds": 12.306406291027088,
+  "test_loaded": false,
+  "original_baseline_checkpoint_byte_parity": {
+    "code/runs/mlp/checkpoint/config.json": true,
+    "code/runs/mlp/checkpoint/weights.npz": true,
+    "code/runs/mlp_v2/metadata_seed42/checkpoint/config.json": true,
+    "code/runs/mlp_v2/metadata_seed42/checkpoint/weights.npz": true,
+    "code/runs/mlp_v2/metadata_seed123/checkpoint/config.json": true,
+    "code/runs/mlp_v2/metadata_seed123/checkpoint/weights.npz": true,
+    "code/runs/mlp_v2/metadata_seed2026/checkpoint/config.json": true,
+    "code/runs/mlp_v2/metadata_seed2026/checkpoint/weights.npz": true,
+    "code/runs/mlp_v2/context_seed42/checkpoint/config.json": true,
+    "code/runs/mlp_v2/context_seed42/checkpoint/weights.npz": true,
+    "code/runs/mlp_v2/context_seed123/checkpoint/config.json": true,
+    "code/runs/mlp_v2/context_seed123/checkpoint/weights.npz": true,
+    "code/runs/mlp_v2/context_seed2026/checkpoint/config.json": true,
+    "code/runs/mlp_v2/context_seed2026/checkpoint/weights.npz": true
+  },
+  "computation_ast_parity": true,
+  "targeted_tests_passed": 7,
+  "historical_json_files_preserved": 267
+}

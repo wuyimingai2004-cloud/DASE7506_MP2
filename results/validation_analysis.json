@@ -1,0 +1,7 @@
+{
+  "disagreement_questions": 355,
+  "disagreement_correct": 306,
+  "other_questions": 443,
+  "other_correct": 443,
+  "scope": "Descriptive analysis of frozen validation predictions; no model changes."
+}
